@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Books = (props)=> {
     const {
@@ -7,7 +8,7 @@ const Books = (props)=> {
         author,
         id,
         category,
-    }
+    },
 
     } = props
 
@@ -23,7 +24,7 @@ const Books = (props)=> {
     </>
 }
 
-Book.propTypes = {
+Books.propTypes = {
     book: PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
