@@ -19,6 +19,17 @@ const Books = (props)=> {
         {' - '}
         {category}
     </li>
-    <button type="button" id={id}></button>
+    <button type="button" id={id}>Remove</button>
     </>
 }
+
+Book.propTypes = {
+    book: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired,
+    }).isRequired,
+  };
+
+export default Books;
