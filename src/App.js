@@ -8,11 +8,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <Navbar />
-     <Routes>
-      <Route path="/" element ={<BookContainer/>} />
-      <Route path="/categories" element={<Categories/> } />
-     </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<BookContainer />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
     </div>
   );
 }
