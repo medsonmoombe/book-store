@@ -2,18 +2,24 @@ const ADD_BOOK = 'book-store/books/ADD_BOOK';
 const REMOVE_BOOK = 'book-store/books/REMOVE_BOOK';
 
 const initialBook = [
-  {id: 1,
-  author: "Daniel Banda",
-  books: "The fierce village",
-},
-{id: 2,
-  author: "Gofrey Zimba",
-  books: "Good deeds",
-},
-{id: 3,
-  author: "Mathews Zulu",
-  books: "The old village",
-}
+  {
+    id: 1,
+    author: 'Daniel Banda',
+    books: 'The fierce village',
+    category: '',
+  },
+  {
+    id: 2,
+    author: 'Gofrey Zimba',
+    books: 'Good deeds',
+    category: '',
+  },
+  {
+    id: 3,
+    author: 'Mathews Zulu',
+    books: 'The old village',
+    category: '',
+  },
 ];
 
 const bookReducer = (state = initialBook, action) => {
@@ -21,8 +27,8 @@ const bookReducer = (state = initialBook, action) => {
     case ADD_BOOK: {
       const objBook = {
         id: state.length + 1,
-        author: action.books.author,
-        books: action.books.books,
+        author: action.book.author,
+        books: action.book.books,
       };
       return [...state, objBook];
     }
