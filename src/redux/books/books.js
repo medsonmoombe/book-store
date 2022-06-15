@@ -48,15 +48,6 @@ export const removeBook = (id) => ({
   type: REMOVE_BOOK, id,
 });
 
-// export const fetchBook = () => (dispatch) => {
-//   axios.get(baseUrl).then(
-//     (response) => {
-//       const data = Object.entries(response.data);
-//       dispatch({ type: FETCH_BOOK, newBook: data });
-//     },
-//   );
-// };
-
 export const fetchBook = () => (dispatch) => {
   axios.get(baseUrl).then((response) => {
     const data = Object.entries(response.data);
