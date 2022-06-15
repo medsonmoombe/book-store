@@ -10,14 +10,15 @@ import store from './redux/configureStore';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <Provider store={store}>
-    <React.StrictMode>
+  <React.StrictMode>
+    <Provider store={store}>
       <Router>
         <App />
       </Router>
-    </React.StrictMode>
-    ,
-  </Provider>,
+    </Provider>
+  </React.StrictMode>
+  ,
+
 );
 
 // If you want to start measuring performance in your app, pass a function

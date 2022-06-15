@@ -4,19 +4,19 @@ import { addBook } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
-  const [infor, setInfor] = useState({ books: '', author: '' });
+  const [infor, setInfor] = useState({ book: '', author: '' });
 
   const inputData = (e) => {
     const inputName = e.target.name;
     switch (inputName) {
       case 'title':
-        setInfor({ books: e.target.value, author: infor.author });
+        setInfor({ book: e.target.value, author: infor.author });
         break;
       case 'author':
-        setInfor({ books: infor.books, author: e.target.value });
+        setInfor({ book: infor.book, author: e.target.value });
         break;
       default:
-        setInfor({ books: infor.books, author: infor.author });
+        setInfor({ book: infor.book, author: infor.author });
     }
   };
 
