@@ -8,7 +8,6 @@ import AddBook from './AddBook';
 const BookContainer = ({ fetchBooks }) => {
   const infor = useSelector((state) => state.bookReducer);
   const books = infor;
-  console.log(books);
   useEffect(() => {
     fetchBooks();
   }, []);
