@@ -15,12 +15,12 @@ const bookReducer = (state = initialBook, action) => {
         item_id: `book${Date.now()}`,
         title: action.book.book,
         author: action.book.author,
-        category: 'fiction',
+        category: action.book.category,
       };
       const newState = [`book${Date.now()}`, [{
         title: action.book.book,
         author: action.book.author,
-        category: 'fiction',
+        category: action.book.category,
       }]];
 
       axios.post(baseUrl, objBook);
