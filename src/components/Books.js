@@ -16,9 +16,7 @@ const Books = ({ book }) => {
       <div className="first">
         <li key={id} className="book-cont">
           <span className="category">{item.category}</span>
-          {/* {' by '} */}
           <span className="title">{item.title}</span>
-          {/* {' - '} */}
           <span className="author">{item.author}</span>
         </li>
         <div className="buttons">
@@ -27,7 +25,6 @@ const Books = ({ book }) => {
           <button type="button" className="btn">Edit</button>
         </div>
       </div>
-      {/* <div className="book-infor"> */}
       <div className="prgs">
         <div className="circular-progressbar" style={{ width: 100, height: 100 }}>
           <CircularProgressbar className="pgs" value={percentage} />
@@ -46,8 +43,6 @@ const Books = ({ book }) => {
         <span className="chapt">Chapter 17</span>
         <button type="button" className="update-btn">UPDATE PROGRESS</button>
       </div>
-      {/* </div> */}
-
     </div>
   );
 };
