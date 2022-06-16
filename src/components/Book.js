@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Books from './Books';
+import './Book.css';
 
 const BookContent = ({ books }) => (
   <ul className="book-content">
