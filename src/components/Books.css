@@ -1,16 +1,20 @@
 .books-contents {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  border: 2px solid #fff;
-  height: 11rem;
-  list-style: none;
-  width: 75rem;
-
-  /* height: 10.625rem; */
-  margin: 2.313rem 6.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
-  border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #fff;
+    height: 100%;
+    list-style: none;
+    width: 73rem;
+    position: relative;
+    margin-left: 44px;
+    width: 81%;
+    /* height: 10.625rem; */
+    margin: 2.313rem 6.25rem 0;
+    padding: 2rem 9.188rem 1.625rem 1.688rem;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .category {
@@ -121,7 +125,7 @@
 /* media queries */
 @media (max-width: 768px) {
   .books-contents {
-    width: 80%;
+    width: 73rem;
   }
 
   .category {

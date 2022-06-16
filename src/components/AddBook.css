@@ -1,11 +1,19 @@
 .add-container {
-  width: 75rem;
-  margin: 2.313rem 6.25rem 0;
+    width: 81%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 20px;
+    border-top: 2px solid gray;
+    margin-top: 20px;
+    padding-top: 24px;
+    color: gray;
 }
 
 form {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   justify-content: center;
 }
@@ -35,4 +43,4 @@ form {
   border-radius: 3px;
   background-color: #0290ff;
   border: none;
-}
+}  
