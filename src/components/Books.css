@@ -3,14 +3,14 @@
   justify-content: space-between;
   background-color: #fff;
   border: 2px solid #fff;
-  height: 8rem;
+  height: 100%;
   list-style: none;
-  width: 75rem;
-
-  /* height: 10.625rem; */
-  margin: 2.313rem 6.25rem 0;
+  width: 81%;
+  position: relative;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .category {
